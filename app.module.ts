@@ -3,28 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
-import { MainLifecycleComponent } from './main-lifecycle/main-lifecycle.component';
-import { LifecycleChildComponent } from './main-lifecycle/lifecycle-child/lifecycle-child.component';
-import { ChildChildComponent } from './main-lifecycle/lifecycle-child/child-child/child-child.component';
-import { CheckComponent } from './check/check.component';
-import { CheckChildComponent } from './check/check-child/check-child.component';
+import { MaterialModule } from './material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ProductFormComponent } from './product-form/product-form.component';
+import { DepartmentFormComponent } from './department-form/department-form.component';
+import { ProductsTableComponent } from './products-table/products-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainLifecycleComponent,
-    LifecycleChildComponent,
-    ChildChildComponent,
-    CheckComponent,
-    CheckChildComponent
+    ProductFormComponent,
+    DepartmentFormComponent,
+    ProductsTableComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
     FormsModule,
+    MaterialModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
